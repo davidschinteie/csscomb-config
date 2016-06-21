@@ -1,6 +1,6 @@
 {
   "name": "csscomb-config-clicknow",
-  "version": "1.0.0",
+  "version": "0.0.0-semantically-released",
   "description": "CSScomb shareable config for ClickNow",
   "main": "config.json",
   "files": [
