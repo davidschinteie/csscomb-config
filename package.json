@@ -10,7 +10,6 @@
     "commit": "git-cz",
     "watch": "nodemon --exec npm t",
     "lint": "eslint test/",
-    "pretest": "npm run lint",
     "test": "ava",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
@@ -48,26 +47,27 @@
   },
   "preferGlobal": false,
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "devDependencies": {
     "ava": "^0.15.2",
     "commitizen": "^2.8.2",
     "csscomb": "^3.1.8",
     "cz-conventional-changelog": "^1.1.6",
-    "eslint": "^2.13.1",
-    "eslint-config-clicknow": "^1.4.0",
+    "eslint": "^3.0.0",
+    "eslint-config-clicknow": "^1.5.0",
     "eslint-plugin-ava": "^2.5.0",
-    "ghooks": "^1.2.4",
+    "ghooks": "^1.3.2",
     "nodemon": "^1.9.2",
     "semantic-release": "^4.3.5"
   },
   "peerDependencies": {
-    "csscomb": "^3.1.8"
+    "csscomb": ">=3.1"
   },
   "config": {
     "ghooks": {
-      "pre-commit": "npm t"
+      "pre-commit": "npm run lint",
+      "pre-push": "npm t"
     },
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
