@@ -2,21 +2,6 @@
   "name": "csscomb-config-clicknow",
   "version": "0.0.0-semantically-released",
   "description": "CSScomb shareable config for ClickNow",
-  "main": "config.json",
-  "files": [
-    "config.json"
-  ],
-  "scripts": {
-    "commit": "git-cz",
-    "watch": "nodemon --exec npm t",
-    "lint": "eslint test/",
-    "test": "ava",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/cknow/csscomb-config-clicknow"
-  },
   "keywords": [
     "csscomb",
     "csscombconfig",
@@ -34,20 +19,40 @@
     "verify",
     "enforce"
   ],
-  "author": {
-    "name": "Ricardo Gobbo de Souza",
-    "email": "ricardogobbosouza@yahoo.com.br",
-    "role": "Developer"
-  },
-  "license": "MIT",
   "homepage": "https://github.com/cknow/csscomb-config-clicknow",
   "bugs": {
     "url": "https://github.com/cknow/csscomb-config-clicknow/issues",
     "email": "ricardo@clicknow.com.br"
   },
-  "preferGlobal": false,
-  "engines": {
-    "node": ">=4"
+  "license": "MIT",
+  "author": {
+    "name": "Ricardo Gobbo de Souza",
+    "email": "ricardogobbosouza@yahoo.com.br",
+    "role": "Developer"
+  },
+  "files": [
+    "config.json"
+  ],
+  "main": "config.json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cknow/csscomb-config-clicknow"
+  },
+  "scripts": {
+    "commit": "git-cz",
+    "watch": "nodemon --exec npm t",
+    "lint": "eslint test/",
+    "test": "ava",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm t"
+    },
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
   },
   "devDependencies": {
     "ava": "^0.15.2",
@@ -64,13 +69,9 @@
   "peerDependencies": {
     "csscomb": ">=3"
   },
-  "config": {
-    "ghooks": {
-      "pre-commit": "npm run lint",
-      "pre-push": "npm t"
-    },
-    "commitizen": {
-      "path": "node_modules/cz-conventional-changelog"
-    }
-  }
+  "engines": {
+    "node": ">=4"
+  },
+  "preferGlobal": false,
+  "private": false
 }
