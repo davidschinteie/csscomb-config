@@ -6,6 +6,7 @@
   "element-case": "lower",
   "eof-newline": true,
   "leading-zero": false,
+  "lines-between-rulesets": 1,
   "quotes": "single",
   "remove-empty-rulesets": true,
   "sort-order": [
