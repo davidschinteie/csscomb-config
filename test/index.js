@@ -9,9 +9,9 @@ const runCssComb = text => {
     return comb.processString(text);
 };
 
-test('csscomb', t => {
+test('csscomb', async t => {
     const text = 'body{background-color:#ff0000;}';
     const expected = 'body {\n    background-color: #f00;\n}\n';
 
-    t.is(runCssComb(text), expected);
+    t.is(await runCssComb(text), expected);
 });
