@@ -4,7 +4,9 @@
   "description": "CSScomb shareable config for ClickNow",
   "keywords": [
     "csscomb",
-    "csscombconfig",
+    "csscomb-config",
+    "csscomb-rules",
+    "css",
     "config",
     "code",
     "quality",

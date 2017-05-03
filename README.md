@@ -31,11 +31,7 @@ npm install --save-dev csscomb-config-clicknow
 > CSScomb [configuration](https://github.com/csscomb/csscomb.js/blob/master/doc/configuration.md#where-to-put-config)
 
 ```
-var csscombconfig = require('csscomb-config-clicknow');
+csscomb --config ./node_modules/csscomb-config-clicknow/config.json
 ```
 
-Path CSScomb config file:
-
-```
-./node_modules/csscomb-config-clicknow/config.json
-```
+> **Note:** It is not necessary to create the `.csscomb.json` file.
