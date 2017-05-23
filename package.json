@@ -60,18 +60,18 @@
   "devDependencies": {
     "ava": "^0.19.1",
     "commitizen": "^2.9.6",
-    "csscomb": "^4.0.1",
+    "csscomb": "^4.1.0",
     "cz-conventional-changelog": "^2.0.0",
     "eslint": "^3.19.0",
     "eslint-config-clicknow": "^1.17.0",
     "eslint-plugin-ava": "^4.2.0",
     "husky": "^0.13.3",
     "nodemon": "^1.11.0",
-    "semantic-release": "^6.3.2",
+    "semantic-release": "^6.3.6",
     "validate-commit-msg": "^2.12.1"
   },
   "peerDependencies": {
-    "csscomb": ">=4"
+    "csscomb": ">=4.1.0"
   },
   "engines": {
     "node": ">=4",
