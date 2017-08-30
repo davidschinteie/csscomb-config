@@ -1,7 +1,7 @@
 {
-  "name": "csscomb-config-clicknow",
+  "name": "@cknow/csscomb-config",
   "version": "0.0.0-semantically-released",
-  "description": "CSScomb shareable config for ClickNow",
+  "description": "CSScomb shareable config",
   "keywords": [
     "csscomb",
     "csscomb-config",
@@ -22,9 +22,9 @@
     "verify",
     "enforce"
   ],
-  "homepage": "https://github.com/cknow/csscomb-config-clicknow",
+  "homepage": "https://github.com/cknow/csscomb-config",
   "bugs": {
-    "url": "https://github.com/cknow/csscomb-config-clicknow/issues",
+    "url": "https://github.com/cknow/csscomb-config/issues",
     "email": "ricardo@clicknow.com.br"
   },
   "license": "MIT",
@@ -39,7 +39,7 @@
   "main": "config.json",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cknow/csscomb-config-clicknow"
+    "url": "https://github.com/cknow/csscomb-config"
   },
   "scripts": {
     "commit": "git-cz",
@@ -58,18 +58,18 @@
     }
   },
   "devDependencies": {
-    "ava": "^0.21.0",
-    "babel-core": "^6.25.0",
+    "@cknow/eslint-config": "^2.0.0",
+    "ava": "^0.22.0",
+    "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.0",
     "commitizen": "^2.9.6",
     "csscomb": "^4.2.0",
     "cz-conventional-changelog": "^2.0.0",
-    "eslint": "^4.4.1",
-    "eslint-config-clicknow": "^1.26.0",
-    "eslint-plugin-ava": "^4.2.1",
+    "eslint": "^4.5.0",
+    "eslint-plugin-ava": "^4.2.2",
     "husky": "^0.14.3",
     "nodemon": "^1.11.0",
-    "semantic-release": "^6.3.6",
+    "semantic-release": "^7.0.2",
     "validate-commit-msg": "^2.14.0"
   },
   "peerDependencies": {
