@@ -1,4 +1,5 @@
 # CSScomb Config
+
 > CSScomb [shareable config](https://github.com/csscomb/csscomb.js/blob/master/doc/configuration.md)
 
 [![NPM Version](https://img.shields.io/npm/v/@cknow/csscomb-config.svg)](https://www.npmjs.com/package/@cknow/csscomb-config)
@@ -19,14 +20,15 @@
 
 ## Install
 
-```
+```bash
 npm install --save-dev @cknow/csscomb-config
 ```
 
 ## Usage
+
 > CSScomb [configuration](https://github.com/csscomb/csscomb.js/blob/master/doc/configuration.md#where-to-put-config)
 
-```
+```bash
 csscomb --config ./node_modules/@cknow/csscomb-config/config.json
 ```
 
