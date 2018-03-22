@@ -3,9 +3,7 @@ sudo: false
 language: node_js
 
 cache:
-  yarn: true
-  directories:
-    - node_modules
+  directories: ~/.npm
 
 notifications:
   email: false
@@ -15,14 +13,11 @@ node_js:
   - 8
   - 7
   - 6
+  - 5
+  - 4
 
-before_install:
-  - npm i -g npm
-  - npm i -g yarn
-  - yarn
-
-before_script:
-  - npm prune
+install:
+  - travis_retry yarn install
 
 script:
   - node --version
@@ -30,8 +25,11 @@ script:
   - yarn --version
   - npm test
 
-after_success:
-  - npm run travis-deploy-once "npm run semantic-release"
+deploy:
+  provider: script
+  skip_cleanup: true
+  script:
+    - npm install -g travis-deploy-once semantic-release && travis-deploy-once "semantic-release"
 
 branches:
   except:
